@@ -14,8 +14,8 @@ def top_ten(sub_reddit):
         print(None)
         return
 
-    url = "https://www.reddit.com/r/{}/hot.json".format(sub_reddit)
-    headers = {"User-Agent": "linux:1-top_ten:v1.0 (by /u/alu_student)"}
+    url = "https://www.reddit.com/r/{}/hot/.json".format(sub_reddit)
+    headers = {"User-Agent": "Mozilla/5.0"}
     params = {"limit": 10}
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
